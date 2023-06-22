@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** print putchar without using printf
+/**
+ * main-print _putchar
  * use main.h
  * Return (0)
  */
@@ -17,5 +18,5 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 
-	return 0;
+	return (0);
 }
