@@ -1,7 +1,12 @@
 #include "main.h"
 
-int main(void)
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int mian(void)
 {
 	print_alphabet();
-return (0);
+	return (0);
 }
