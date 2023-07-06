@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_prime_number - checks if the input ineger is a prime number
+ * prime_check - checks if the input ineger is a prime number
  * @p: possible prime number
  * @chk: check
  * return: 1 if prime number, else 0
@@ -17,7 +17,7 @@ int prime_check(int chk, int p)
 }
 
 /**
- * is_prime_number - check if number is prime 
+ * is_prime_number - check if number is prime number
  * @n: number to check
  * return: 1 if prime, else 0
  */
