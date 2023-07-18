@@ -7,7 +7,7 @@
  *
  * Return: the length of the string
  */
-int_strlen(char *s)
+int _strlen(char *s)
 {
 	int i;
 
@@ -17,12 +17,13 @@ int_strlen(char *s)
 	{
 		i++;
 	}
+
 	return (i);
 }
 
 /**
- * _strcpy - copies the string pointed to by src
- * including the termination null byte (\0)
+ * *_strcpy - copies the string pointed to by src
+ * including the terminating null byte (\0)
  * to the buffer pointed to by dest
  * @dest: pointer to the buffer in which we copy the string
  * @src: string to be copied
@@ -39,27 +40,27 @@ char *_strcpy(char *dest, char *src)
 	{
 		len++;
 	}
+
 	for (i = 0; i < len; i++)
 	{
 		dest[i] = src[i];
 	}
-	dest[i] = ('\0');
+	dest[i] = '\0';
 
 	return (dest);
 }
 
 /**
- * new_dog - create a new dog
+ * new_dog - creates a new dog
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
  *
- * Return: pointer to the new_dog (Success), NULL otherwise
+ * Return: pointer to the new dog (Success), NULL otherwise
  */
-dog_t *new_dog(char *name, float age, Char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
-
 	int len1, len2;
 
 	len1 = _strlen(name);
@@ -88,3 +89,4 @@ dog_t *new_dog(char *name, float age, Char *owner)
 
 	return (dog);
 }
+
